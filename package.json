@@ -8,14 +8,24 @@
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "joi": "^18.3.2",
+    "mongoose": "^9.12.2"
   },
   "devDependencies": {
-    "dotenv": "^17.2.3",
-    "nodemon": "^3.1.10"
-  }
+    "dotenv": "^17.4.2",
+    "nodemon": "^3.1.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sekeorioye/new-todo-api.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sekeorioye/new-todo-api/issues"
+  },
+  "homepage": "https://github.com/sekeorioye/new-todo-api#readme"
 }
