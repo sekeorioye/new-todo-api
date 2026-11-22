@@ -1,0 +1,14 @@
+$kind: http-request
+description: ""
+url: localhost:3001/todos
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"task\": \"Test with Postman\",\r
+
+    \    \"completed\": false\r
+
+    }"
+order: 3000

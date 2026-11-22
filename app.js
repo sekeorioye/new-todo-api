@@ -16,6 +16,20 @@ app.use(logRequest);
 
 
 // GET All
+
+app.get('/todos', async (req, res) => {
+
+
+  const todos = await Todo.find(
+    req.query.completed !== undefined
+      ? { completed: req.query.completed === 'true' }
+      : {}
+  );
+  res.status(200).json(todos);
+
+}
+)
+
 app.get('/todos', async(req, res) => {
   const todos = await Todo.find();
   res.status(200).json(todos);
@@ -47,6 +61,8 @@ app.get('/todos/completed', async (req, res) => {
   const todos = await Todo.find({ completed: true });
   res.status(200).json(todos);
 });
+
+
 // GET One
 app.get('/todos/:id', async (req, res) => {
   const todo = await Todo.findById(req.params.id);

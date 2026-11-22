@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: localhost:3001/todos/6b031f07e33e972bede9fb77
+method: DELETE
+order: 7000

@@ -1,0 +1,8 @@
+$kind: http-request
+description: ""
+url: localhost:3001/todos/6b031f07e33e972bede9fb77
+method: PATCH
+body:
+  type: json
+  content: "{\r\n    \"completed\": true\r\n}"
+order: 6000

@@ -1,0 +1,5 @@
+$kind: http-request
+description: ""
+url: localhost:3001/todos/completed
+method: GET
+order: 5000
